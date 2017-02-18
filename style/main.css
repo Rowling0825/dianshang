@@ -92,3 +92,23 @@
 	
 	
 }
+/*导航栏*/
+.navBox{
+	height: 35px;
+	background-color: #1369c0;
+	color: #FFF;
+}
+.shopClass{
+	width: 190px;
+	line-height: 35px;
+	/* 注意，会留下后患*/
+	
+}
+.shopClass i{
+	width: 13px;
+	height: 8px;
+	overflow: hidden;
+	background: url(../images/icon/jiantou_03.jpg) left center no-repeat;
+	display: inline-block;
+	margin-left: 11px;
+}
