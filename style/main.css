@@ -100,9 +100,14 @@
 }
 .shopClass{
 	width: 190px;
-	line-height: 35px;
-	/* 注意，会留下后患*/
+	/*line-height: 35px;*/
+	/*text-align: center;*/
+	/* 注意，会留下后患，后面会继承父亲的性质，因此需要改*/
 	
+}
+.shopClass h3{
+	text-align: center;
+	line-height: 35px;
 }
 .shopClass i{
 	width: 13px;
@@ -111,4 +116,22 @@
 	background: url(../images/icon/jiantou_03.jpg) left center no-repeat;
 	display: inline-block;
 	margin-left: 11px;
+}
+.nav,.shopClass{
+	/*font-family: "Microsoft YaHei","微软雅黑";*/
+}
+.nav{
+	line-height: 35px;
+}
+.nav li{
+	float: left;
+}
+.nav a{
+	height: 35px;
+	display: inline-block;
+	padding: 0 35px;
+	color: #FFF;
+}
+.nav .active{
+	background-color: #4593fd;
 }
