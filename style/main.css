@@ -10,6 +10,12 @@
 .rightArea{
 	float: right;
 }
+.hide{
+display: none;
+}
+.show{
+	display: block;
+}
 
 /*topBar*/
 .topBar{
@@ -88,9 +94,7 @@
 	background:url(../images/icon/jiantou_16.jpg) 33px
 	center no-repeat;
 	text-align: right;
-	padding-right: 29px;
-	
-	
+	padding-right: 29px;	
 }
 /*导航栏*/
 .navBox{
@@ -103,6 +107,7 @@
 	/*line-height: 35px;*/
 	/*text-align: center;*/
 	/* 注意，会留下后患，后面会继承父亲的性质，因此需要改*/
+	position: relative;
 	
 }
 .shopClass h3{
@@ -117,7 +122,7 @@
 	display: inline-block;
 	margin-left: 11px;
 }
-.nav,.shopClass{
+.nav,.shopClass h3{
 	/*font-family: "Microsoft YaHei","微软雅黑";*/
 }
 .nav{
@@ -134,4 +139,112 @@
 }
 .nav .active{
 	background-color: #4593fd;
+}
+/*商品弹出列表*/
+.shopClass_item{
+	padding: 14px 10px;
+	border-bottom: #3487f2 solid 1px;
+	border-top: #5aa1fe solid 1px;
+}
+.shopClass_item dt{
+	height: 22px;
+	background: url(../images/icon/jian_26.jpg) right center no-repeat;
+}
+
+.shopClass_item .b{
+	font-size: 14px;
+	/*font:14px/1 "Microsoft YaHei","微软雅黑";*/
+	font-weight: bold;
+}
+.shopClass_show{
+	background-color: #4593fd;
+	position: absolute;
+	left: 0;
+	top: 35px;
+    width:100%;                            
+}
+.shopClass_item a{
+	color: #FFF;
+}
+.shopClass_item a:hover{
+	text-decoration: underline;
+}
+.shopClass_item .aLink{
+	width: 48px;
+	height: 20px;
+	background: url(../images/icon/tuoyuan_23.png) left center no-repeat;
+	display: inline-block;
+	text-align: center;
+	line-height: 20px;
+	text-decoration: underline;
+}
+/*shopClass_item active状态*/
+.shopClass_active{
+background-color: #FFF;
+border-left: #4593FD solid 1px;
+}
+.shopClass_active a{
+	color: #000;
+}
+.shopClass_active .aLink{
+	color: #FFF;
+	text-decoration: none;
+}
+.shopClass_active dt{
+	background: none;
+}
+/*
+弹出的菜单
+ */
+.shopClass_list{
+	/*需要考虑边框*/
+	width: 568px;
+/*	height: 378px;*/
+	border: #CCC solid 1px;
+	position: absolute;
+	left: 190px;
+	top: 35px;
+	
+}
+.shopClass_cont{
+	padding: 0 20px;
+}
+.shopList_item dt{
+	color: #4B87D9;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+}
+.shopList_item dd{
+	padding-left: 68px;
+	margin-top: -24px;
+	line-height: 24px;
+}
+.shopList_item dd a{
+	margin-right: 12px;
+}
+.shopList_item{
+	padding: 10px 0;
+	border-bottom: #CCC solid 1px;
+}
+.shopList_links{
+	padding: 15px 0;
+
+}
+.shopList_links a{
+	color: #FFF;
+	background-color: #2785E6;
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+	display: inline-block;
+	padding: 0 14px 0 8px;
+	margin-right: 10px;
+}
+.shopList_links span{
+	width: 4px;
+	height: 8px;
+background: url(../images/icon/jiant_31.jpg) left center no-repeat;
+display: inline-block;
+margin-left: 7px;
 }
